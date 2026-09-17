@@ -1,0 +1,647 @@
+.resume-paper {
+  width: 210mm;
+  min-height: 297mm;
+  background: #ffffff;
+  color: #111111;
+  box-sizing: border-box;
+  overflow: visible;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.resume-paper *,
+.resume-paper *::before,
+.resume-paper *::after {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.resume-paper h1,
+.resume-paper h2,
+.resume-paper h3,
+.resume-paper p,
+.resume-paper ul,
+.resume-paper li {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.resume-paper a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resume-paper img {
+  display: block;
+  max-width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Classic — traditional single column, navy serif header                     */
+/* -------------------------------------------------------------------------- */
+
+.template-classic {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  color: #1a1a1a;
+  padding: 15mm 16mm 16mm;
+  background: #ffffff;
+}
+
+.tc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.tc-name {
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #0f2744;
+  line-height: 1.12;
+}
+
+.tc-title {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3d5a80;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.tc-contact {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 9.4px;
+  color: #334155;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 0;
+  margin-top: 8px;
+  line-height: 1.45;
+}
+
+.tc-dot {
+  margin: 0 7px;
+  color: #94a3b8;
+}
+
+.tc-photo {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1.5px solid #0f2744;
+  flex-shrink: 0;
+}
+
+.tc-section {
+  margin-top: 11px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.tc-h {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: #0f2744;
+  border-bottom: 1.6px solid #0f2744;
+  padding-bottom: 3px;
+  margin-bottom: 7px;
+}
+
+.tc-summary {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10.4px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.tc-item {
+  margin-bottom: 8px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.tc-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.tc-role {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 11.2px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.tc-date {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 9.3px;
+  color: #475569;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.tc-sub {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10px;
+  color: #3d5a80;
+  font-style: italic;
+  margin-top: 1px;
+}
+
+.tc-bullets {
+  margin: 3px 0 0 15px;
+  padding: 0;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10px;
+  line-height: 1.45;
+  color: #334155;
+}
+
+.tc-bullets li {
+  margin-bottom: 1px;
+}
+
+.tc-skills {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10.2px;
+  color: #1e293b;
+  line-height: 1.55;
+}
+
+.tc-muted {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10px;
+  color: #475569;
+  margin-top: 2px;
+  line-height: 1.45;
+}
+
+.tc-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 18px;
+}
+
+.tc-lang {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10px;
+  color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.tc-lang span:last-child {
+  color: #475569;
+  font-size: 9.5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Modern — teal sidebar + clean sans body                                    */
+/* -------------------------------------------------------------------------- */
+
+.template-modern {
+  display: grid;
+  grid-template-columns: 66mm 1fr;
+  min-height: 297mm;
+  background: #ffffff;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  align-items: stretch;
+}
+
+.tm-side {
+  background: #14344b;
+  color: #f1f5f9;
+  padding: 14mm 8mm 16mm 9mm;
+}
+
+.tm-main {
+  padding: 13mm 11mm 14mm 10mm;
+  color: #1e293b;
+  background: #ffffff;
+}
+
+.tm-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.tm-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5eead4;
+}
+
+.tm-mono {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 3px solid #5eead4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #5eead4;
+  background: #0f2744;
+  letter-spacing: 1px;
+}
+
+.tm-side-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tm-side-job {
+  font-size: 9.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #5eead4;
+  text-align: center;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.tm-side-h {
+  font-size: 9.5px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #5eead4;
+  border-bottom: 1px solid #2a5a6e;
+  padding-bottom: 4px;
+  margin: 15px 0 8px;
+  font-weight: 700;
+}
+
+.tm-contact-item {
+  font-size: 9px;
+  line-height: 1.4;
+  color: #e2e8f0;
+  margin-bottom: 7px;
+  word-break: break-word;
+}
+
+.tm-contact-label {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #5eead4;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.tm-skill {
+  display: inline-block;
+  font-size: 8.8px;
+  background: #1c4a63;
+  color: #f8fafc;
+  border: 1px solid #2a6a82;
+  border-radius: 10px;
+  padding: 2px 7px;
+  margin: 0 4px 5px 0;
+}
+
+.tm-lang {
+  font-size: 9.5px;
+  margin-bottom: 6px;
+}
+
+.tm-lang-name {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.tm-lang-level {
+  color: #94a3b8;
+  font-size: 8.5px;
+}
+
+.tm-cert {
+  font-size: 9.3px;
+  margin-bottom: 8px;
+  line-height: 1.35;
+  color: #e2e8f0;
+}
+
+.tm-cert strong {
+  display: block;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.tm-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.15;
+}
+
+.tm-job {
+  font-size: 11px;
+  color: #0f766e;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin: 3px 0 10px;
+}
+
+.tm-h {
+  font-size: 10.5px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #0f766e;
+  font-weight: 700;
+  border-bottom: 2px solid #99f6e4;
+  padding-bottom: 3px;
+  margin: 12px 0 8px;
+}
+
+.tm-summary {
+  font-size: 10.2px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.tm-item {
+  margin-bottom: 9px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.tm-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.tm-role {
+  font-size: 11.2px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tm-date {
+  font-size: 9px;
+  color: #0f766e;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.tm-sub {
+  font-size: 10px;
+  color: #475569;
+  margin-top: 1px;
+}
+
+.tm-bullets {
+  margin: 3px 0 0 14px;
+  font-size: 10px;
+  line-height: 1.45;
+  color: #334155;
+}
+
+.tm-tech {
+  font-size: 9px;
+  color: #0f766e;
+  margin-top: 2px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Executive — centered serif, gold rules, cream paper                        */
+/* -------------------------------------------------------------------------- */
+
+.template-executive {
+  font-family: "Libre Baskerville", Georgia, serif;
+  padding: 16mm 18mm 16mm;
+  min-height: 297mm;
+  background: #fffaf3;
+  color: #1c1917;
+}
+
+.te-top {
+  text-align: center;
+}
+
+.te-photo {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 8px;
+  border: 2px solid #b45309;
+}
+
+.te-name {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: #1c1917;
+  line-height: 1.2;
+}
+
+.te-title {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #b45309;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.te-contact {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 9px;
+  color: #57534e;
+  margin-top: 9px;
+  line-height: 1.5;
+}
+
+.te-rule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 4px;
+}
+
+.te-rule-line {
+  flex: 1;
+  height: 1px;
+  background: #b45309;
+}
+
+.te-diamond {
+  width: 6px;
+  height: 6px;
+  background: #b45309;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.te-h {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10.2px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #b45309;
+  font-weight: 700;
+  margin: 12px 0 7px;
+  text-align: center;
+}
+
+.te-summary {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10.3px;
+  line-height: 1.55;
+  color: #44403c;
+  text-align: center;
+}
+
+.te-item {
+  margin-bottom: 9px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.te-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.te-role {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+.te-date {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 9px;
+  color: #b45309;
+  white-space: nowrap;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.te-sub {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10px;
+  color: #78716c;
+  font-style: italic;
+  margin-top: 1px;
+}
+
+.te-bullets {
+  margin: 4px 0 0 14px;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10px;
+  line-height: 1.45;
+  color: #44403c;
+}
+
+.te-skills {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10.2px;
+  color: #1c1917;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+.te-muted {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10px;
+  color: #57534e;
+  margin-top: 2px;
+  line-height: 1.45;
+}
+
+.te-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 20px;
+}
+
+.te-lang {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #1c1917;
+}
+
+.te-lang span:last-child {
+  color: #b45309;
+  font-size: 9px;
+}
+
+.print-source {
+  position: fixed;
+  left: -12000px;
+  top: 0;
+  width: 210mm;
+  background: #ffffff;
+  pointer-events: none;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html,
+  body,
+  #root {
+    width: 210mm;
+    height: auto !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-source {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 210mm !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .resume-paper {
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+}
